@@ -34,7 +34,7 @@ class PULSE(torch.nn.Module):
             if self.verbose: print("\tLoading Mapping Network")
             mapping = G_mapping().cuda()
 
-            with open_url("https://drive.google.com/uc?id=1TQSkJkoVdp8G_9Pyy7h3aBGxSY8rNau0", cache_dir=cache_dir, verbose=verbose) as f:
+            with open_url("https://drive.google.com/uc?id=1ZBUs3rQjIZu2LZl_-q8cJWXhjSofxyrC", cache_dir=cache_dir, verbose=verbose) as f:
                     mapping.load_state_dict(torch.load(f))
 
             if self.verbose: print("\tRunning Mapping Network")
